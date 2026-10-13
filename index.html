@@ -1684,7 +1684,7 @@ button { border:0; padding:0; border-radius:0; font:inherit; text-align:inherit;
 const viewport = document.querySelector('.viewport');
 const design = document.getElementById('design');
 function fitDesign() {
-  const scale = Math.min(1, viewport.clientWidth / 1454);
+  const scale = viewport.clientWidth / 1454;
   // zoom изменяет размеры в потоке: высота страницы остаётся автоматической.
   design.style.zoom = String(scale);
 }
